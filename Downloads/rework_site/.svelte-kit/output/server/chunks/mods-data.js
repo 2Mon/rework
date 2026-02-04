@@ -1,4 +1,3 @@
-const GITHUB_MODS_URL = "https://raw.githubusercontent.com/2Mon/rework/main/main/mods.json";
 const sampleMods = [
   {
     id: "direct-drive-conversion",
@@ -28,20 +27,6 @@ const sampleMods = [
     image: null
   }
 ];
-async function fetchMods() {
-  try {
-    const response = await fetch(GITHUB_MODS_URL);
-    if (!response.ok) {
-      console.warn("Failed to fetch mods from GitHub, using sample data");
-      return sampleMods;
-    }
-    const data = await response.json();
-    return data.mods || sampleMods;
-  } catch (error) {
-    console.warn("Error fetching mods:", error);
-    return sampleMods;
-  }
-}
 export {
-  fetchMods as f
+  sampleMods as s
 };

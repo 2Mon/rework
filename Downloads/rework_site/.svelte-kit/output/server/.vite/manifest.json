@@ -94,7 +94,7 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.BHxh_Hmm.css"
+      "_app/immutable/assets/_layout._VKyKHSd.css"
     ]
   },
   "src/routes/+page.svelte": {
@@ -106,8 +106,20 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.Vr4iXcBP.css"
+      "_app/immutable/assets/_page.Bz88-U3D.css"
     ]
+  },
+  "src/routes/api/github/+server.js": {
+    "file": "entries/endpoints/api/github/_server.js",
+    "name": "entries/endpoints/api/github/_server",
+    "src": "src/routes/api/github/+server.js",
+    "isEntry": true
+  },
+  "src/routes/api/signup/+server.js": {
+    "file": "entries/endpoints/api/signup/_server.js",
+    "name": "entries/endpoints/api/signup/_server",
+    "src": "src/routes/api/signup/+server.js",
+    "isEntry": true
   },
   "src/routes/examples/+page.js": {
     "file": "entries/pages/examples/_page.js",
@@ -127,7 +139,7 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.CzFYGuFx.css"
+      "_app/immutable/assets/_page.DgiLJQAK.css"
     ]
   },
   "src/routes/examples/[slug]/+page.js": {
@@ -148,7 +160,43 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.srAILv5m.css"
+      "_app/immutable/assets/_page.DgiLJQAK.css"
+    ]
+  },
+  "src/routes/how-it-works/+page.svelte": {
+    "file": "entries/pages/how-it-works/_page.svelte.js",
+    "name": "entries/pages/how-it-works/_page.svelte",
+    "src": "src/routes/how-it-works/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.D7Iqdt9I.css"
+    ]
+  },
+  "src/routes/submitting/journaling/+page.svelte": {
+    "file": "entries/pages/submitting/journaling/_page.svelte.js",
+    "name": "entries/pages/submitting/journaling/_page.svelte",
+    "src": "src/routes/submitting/journaling/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DHs1MEhG.css"
+    ]
+  },
+  "src/routes/submitting/submission-guidelines/+page.svelte": {
+    "file": "entries/pages/submitting/submission-guidelines/_page.svelte.js",
+    "name": "entries/pages/submitting/submission-guidelines/_page.svelte",
+    "src": "src/routes/submitting/submission-guidelines/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.1yEiDfj4.css"
     ]
   }
 }

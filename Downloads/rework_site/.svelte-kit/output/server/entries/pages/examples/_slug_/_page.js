@@ -1,14 +1,16 @@
-import { f as fetchMods } from "../../../../chunks/mods-data.js";
-import { error } from "@sveltejs/kit";
-async function load({ params }) {
-  const mods = await fetchMods();
-  const mod = mods.find((m) => m.id === params.slug);
-  if (!mod) {
-    throw error(404, "Mod not found");
+import { s as sampleMods } from "../../../../chunks/mods-data.js";
+async function load({ fetch }) {
+  try {
+    const response = await fetch("/api/github");
+    if (!response.ok) {
+      return { mods: sampleMods };
+    }
+    const data = await response.json();
+    return { mods: data.mods || sampleMods };
+  } catch (error) {
+    console.warn("Error fetching mods:", error);
+    return { mods: sampleMods };
   }
-  return {
-    mod
-  };
 }
 export {
   load

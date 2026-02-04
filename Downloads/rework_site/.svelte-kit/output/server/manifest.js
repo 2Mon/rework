@@ -6,17 +6,20 @@ function __memo(fn) {
 
 return {
 	appDir: "_app",
-	appPath: "_app",
+	appPath: "rework/_app",
 	assets: new Set([]),
 	mimeTypes: {},
 	_: {
-		client: {start:"_app/immutable/entry/start.CvVPQ-f5.js",app:"_app/immutable/entry/app.DPeFL-9J.js",imports:["_app/immutable/entry/start.CvVPQ-f5.js","_app/immutable/chunks/w_QI6CvN.js","_app/immutable/chunks/B7VdhWLQ.js","_app/immutable/chunks/BUApaBEI.js","_app/immutable/entry/app.DPeFL-9J.js","_app/immutable/chunks/B7VdhWLQ.js","_app/immutable/chunks/B8t-AeH4.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.BjPtBt9m.js",app:"_app/immutable/entry/app.rLTgnUR8.js",imports:["_app/immutable/entry/start.BjPtBt9m.js","_app/immutable/chunks/DH6l_eq4.js","_app/immutable/chunks/CmWbxXY2.js","_app/immutable/entry/app.rLTgnUR8.js","_app/immutable/chunks/CmWbxXY2.js","_app/immutable/chunks/wThiG212.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
 			__memo(() => import('./nodes/2.js')),
 			__memo(() => import('./nodes/3.js')),
-			__memo(() => import('./nodes/4.js'))
+			__memo(() => import('./nodes/4.js')),
+			__memo(() => import('./nodes/5.js')),
+			__memo(() => import('./nodes/6.js')),
+			__memo(() => import('./nodes/7.js'))
 		],
 		remotes: {
 			
@@ -30,6 +33,20 @@ return {
 				endpoint: null
 			},
 			{
+				id: "/api/github",
+				pattern: /^\/api\/github\/?$/,
+				params: [],
+				page: null,
+				endpoint: __memo(() => import('./entries/endpoints/api/github/_server.js'))
+			},
+			{
+				id: "/api/signup",
+				pattern: /^\/api\/signup\/?$/,
+				params: [],
+				page: null,
+				endpoint: __memo(() => import('./entries/endpoints/api/signup/_server.js'))
+			},
+			{
 				id: "/examples",
 				pattern: /^\/examples\/?$/,
 				params: [],
@@ -41,6 +58,27 @@ return {
 				pattern: /^\/examples\/([^/]+?)\/?$/,
 				params: [{"name":"slug","optional":false,"rest":false,"chained":false}],
 				page: { layouts: [0,], errors: [1,], leaf: 4 },
+				endpoint: null
+			},
+			{
+				id: "/how-it-works",
+				pattern: /^\/how-it-works\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 5 },
+				endpoint: null
+			},
+			{
+				id: "/submitting/journaling",
+				pattern: /^\/submitting\/journaling\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 6 },
+				endpoint: null
+			},
+			{
+				id: "/submitting/submission-guidelines",
+				pattern: /^\/submitting\/submission-guidelines\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 7 },
 				endpoint: null
 			}
 		],
