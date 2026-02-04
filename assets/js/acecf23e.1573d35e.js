@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkhackclub_rework=globalThis.webpackChunkhackclub_rework||[]).push([[903],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/rework/blog","blogTitle":"Blog","authorsListPath":"/rework/blog/authors"}')}}]);

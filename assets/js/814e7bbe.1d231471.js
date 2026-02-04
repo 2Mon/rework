@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkhackclub_rework=globalThis.webpackChunkhackclub_rework||[]).push([[679],{222(a){a.exports=JSON.parse('{"metadata":{"permalink":"/rework/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

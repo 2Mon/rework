@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkhackclub_rework=globalThis.webpackChunkhackclub_rework||[]).push([[472],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Rework Blog","permalink":"/rework/blog/Rework Blog","unlisted":false,"date":"2025-12-30T02:47:22.368Z"}]}')}}]);
