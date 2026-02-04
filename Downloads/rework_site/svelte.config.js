@@ -5,6 +5,7 @@ const repoName = 'rework';
 export default {
   kit: {
     adapter: adapter({
+	  runtime: 'nodejs20.x',
       pages: 'build',
       assets: 'build',
       fallback: 'index.html' 
