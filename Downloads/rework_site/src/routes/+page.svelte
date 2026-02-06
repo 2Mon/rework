@@ -159,7 +159,7 @@
 	<section class="cta-section">
 		<a href="https://hackclub.slack.com" class="cta-button">HACK CLUB SLACK</a>
 		<a href="/how-it-works" class="cta-button">HOW TO REWORK</a>
-		<p class="cta-subtext">Got an old printer? Time to mod it.</p>
+		<p class="cta-subtext">Got an old printer? Time to rework it.</p>
 		<div style="margin-top: 30px;">
 			<a href="/examples" style="color: var(--text-secondary); border-bottom: 1px solid var(--border-color); padding-bottom: 2px;">
 				Check out featured mods from the community →
