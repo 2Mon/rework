@@ -8,10 +8,10 @@
 </svelte:head>
 
 <div class="container">
+	<a href="/" class="back-link">← Back to Home</a>
 	<header>
 		<h1>EXAMPLE MODS</h1>
 		<p class="subtitle">Real projects from the Rework community</p>
-		<a href="/" class="back-link">← Back to Home</a>
 	</header>
 
 	<div class="mods-grid">
