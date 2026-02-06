@@ -11,7 +11,7 @@
 	<a href="/" class="back-link">← Back to Home</a>
 	<header>
 		<h1>EXAMPLE MODS</h1>
-		<p class="subtitle">Real projects from the Rework community</p>
+		<p class="subtitle">Rework projects from the community.</p>
 	</header>
 
 	<div class="mods-grid">

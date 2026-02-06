@@ -10,7 +10,7 @@
 
 	<header>
 		<h1>HOW IT WORKS</h1>
-		<p class="subtitle">Your journey from idea to built mod</p>
+		<p class="subtitle">so, how do I rework my printer?</p>
 	</header>
 
 	<section class="workflow-section">
@@ -18,10 +18,9 @@
 			<div class="step">
 				<div class="step-number">1</div>
 				<h3>Design Your Mod</h3>
-				<p>Come up with a hardware mod for your 3D printer. Design it in CAD using tools like Fusion 360, FreeCAD, or Onshape.</p>
+				<p>Come up with a hardware mod for your 3D printer. Design it in CAD using the program of your choice.</p>
 				<ul>
-					<li>Sketch out your idea</li>
-					<li>Create full CAD models in .step format</li>
+					<li>Design your mod</li>
 					<li>Journal your design process in your JOURNAL.md</li>
 				</ul>
 			</div>
@@ -29,9 +28,9 @@
 			<div class="step">
 				<div class="step-number">2</div>
 				<h3>Document Your Design</h3>
-				<p>Create your README with all the details about your mod before submitting.</p>
+				<p>Create your repo with all the documentation for your mod before submitting.</p>
 				<ul>
-					<li>Write clear description of your mod with the reasoning behind why you designed it</li>
+					<li>Write a README.md explaining your mod</li>
 					<li>Include full BOM in table format</li>
 					<li>Add wiring diagrams</li>
 					<li>Include CAD renders</li>
@@ -41,9 +40,9 @@
 			<div class="step">
 				<div class="step-number">3</div>
 				<h3>Submit + Get Grant</h3>
-				<p>Submit your design and documentation in #rework-submissions. Once approved, you'll receive your $75 grant to order parts.</p>
+				<p>Submit your design and documentation.</p>
 				<ul>
-					<li>Submit via the application form</li>
+					<li>Submit via the application form and post to #rework-submissions</li>
 					<li>Get your design reviewed</li>
 					<li>Receive $75 grant via HCB</li>
 					<li>Order your parts</li>
@@ -53,7 +52,7 @@
 			<div class="step">
 				<div class="step-number">4</div>
 				<h3>Build & Journal</h3>
-				<p>Build your mod and document everything in your journal as you go.</p>
+				<p>Build your mod.</p>
 				<ul>
 					<li>Build and test your mod</li>
 					<li>Document progress in your JOURNAL.md</li>
@@ -62,19 +61,18 @@
 
 			<div class="step">
 				<div class="step-number">5</div>
-				<h3>Get Your Filament</h3>
+				<h3>Get Hack Club Filament</h3>
 				<p>Once your mod is complete and working, resubmit to receive exclusive Hack Club filament!</p>
 				<ul>
-					<li>Complete your build</li>
-					<li>Submit final journal and photos</li>
+					<li>Record a video of your mod in action</li>
+					<li>Submit final build to the build submission form</li>
 					<li>Receive Hack Club filament</li>
-					<li>Get featured in examples gallery</li>
 				</ul>
 			</div>
 		</div>
 	</section>
 	<section class="cta-section">
-		<h2>Ready to Submit?</h2>
+		<h2>Ready to Go?</h2>
 		<p>Check out the submission guidelines to learn how to document and submit your project!</p>
 		<a href="/submitting/submission-guidelines" class="cta-button">Submission Guidelines</a>
 	</section>

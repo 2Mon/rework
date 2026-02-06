@@ -4,7 +4,7 @@ export const faqs = [
 		command: 'SET LCD MESSAGE',
 		question: 'Who can participate in Rework?',
 		answer: [
-			'Rework is open to teen Hack Clubbers aged 13-18 of all experience levels.',
+			'Rework is open to Hack Clubbers aged 13-18 of all experience levels.',
 			'Everyone from experienced modders to people who just got their 3D printers are welcome!'
 		]
 	},

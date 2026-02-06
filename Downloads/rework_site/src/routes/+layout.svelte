@@ -9,7 +9,8 @@
 		{ href: '/how-it-works', label: 'How It Works' },
 		{ href: '/examples', label: 'Examples' },
 		{ href: '/submitting/journaling', label: 'Journaling Guide' },
-		{ href: '/submitting/submission-guidelines', label: 'Submission Guidelines' }
+		{ href: '/submitting/submission-guidelines', label: 'Submission Guidelines' },
+		{ href: '/sourcing', label: 'Sourcing Guide' }
 	];
 </script>
 

@@ -34,7 +34,7 @@
 				<div class="req-content">
 					<h3>README.md</h3>
 					<ul>
-						<li>Full image of your project in CAD</li>
+						<li>Full image of your project/'s CAD</li>
 						<li>Short description of your project and why you made it</li>
 						<li>BOM in table format</li>
 						<li>Wiring diagram for your full project</li>
