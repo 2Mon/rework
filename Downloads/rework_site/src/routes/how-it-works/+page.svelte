@@ -16,58 +16,83 @@
 	<section class="workflow-section">
 		<div class="workflow-steps">
 			<div class="step">
-				<div class="step-number">1</div>
-				<h3>Design Your Mod</h3>
-				<p>Come up with a hardware mod for your 3D printer. Design it in CAD using the program of your choice.</p>
-				<ul>
-					<li>Design your mod</li>
-					<li>Journal your design process in your JOURNAL.md</li>
-				</ul>
+				<div class="step-content">
+					<div class="step-number">1</div>
+					<h3>Design Your Mod</h3>
+					<p>Come up with a hardware mod for your 3D printer. Design it in CAD using the program of your choice.</p>
+					<ul>
+						<li>Design your mod</li>
+						<li>Journal your design process in your JOURNAL.md</li>
+					</ul>
+				</div>
+				<div class="image">
+					<img src="https://cdn.hackclub.com/019c35e6-febe-7005-9fbb-b823b2b47eb8/image.png" alt="CAD Design Example" />
+				</div>
 			</div>
 
 			<div class="step">
-				<div class="step-number">2</div>
-				<h3>Document Your Design</h3>
-				<p>Create your repo with all the documentation for your mod before submitting.</p>
-				<ul>
-					<li>Write a README.md explaining your mod</li>
-					<li>Include full BOM in table format</li>
-					<li>Add wiring diagrams</li>
-					<li>Include CAD renders</li>
-				</ul>
+				<div class="step-content">
+					<div class="step-number">2</div>
+					<h3>Document Your Design</h3>
+					<p>Create your repo with all the documentation for your mod before submitting.</p>
+					<ul>
+						<li>Write a README.md explaining your mod</li>
+						<li>Include full BOM in table format</li>
+						<li>Add wiring diagrams</li>
+						<li>Include CAD renders</li>
+					</ul>
+				</div>
+				<div class="image">
+					<img src="https://user-cdn.hackclub-assets.com/019c35fa-14af-7a34-83d6-a5b57243367e/Screenshot%202026-02-06%20at%209.41.25%E2%80%AFPM.png" alt="Documentation" />
+				</div>
 			</div>
 
 			<div class="step">
-				<div class="step-number">3</div>
-				<h3>Submit + Get Grant</h3>
-				<p>Submit your design and documentation.</p>
-				<ul>
-					<li>Submit via the application form and post to #rework-submissions</li>
-					<li>Get your design reviewed</li>
-					<li>Receive $75 grant via HCB</li>
-					<li>Order your parts</li>
-				</ul>
+				<div class="step-content">
+					<div class="step-number">3</div>
+					<h3>Submit + Get Grant</h3>
+					<p>Submit your design and documentation.</p>
+					<ul>
+						<li>Submit via the application form and post to #rework-submissions</li>
+						<li>Get your design reviewed</li>
+						<li>Receive $75 grant via HCB</li>
+						<li>Order your parts</li>
+					</ul>
+				</div>
+				<div class="image">
+					<img src="https://user-cdn.hackclub-assets.com/019c3612-7768-7901-90e9-d77e467f486f/Screenshot%202026-02-06%20at%2010.08.14%E2%80%AFPM.png" alt="Submit" />
+				</div>
 			</div>
 
 			<div class="step">
-				<div class="step-number">4</div>
-				<h3>Build & Journal</h3>
-				<p>Build your mod.</p>
-				<ul>
-					<li>Build and test your mod</li>
-					<li>Document progress in your JOURNAL.md</li>
-				</ul>
+				<div class="step-content">
+					<div class="step-number">4</div>
+					<h3>Build & Journal</h3>
+					<p>Build your mod.</p>
+					<ul>
+						<li>Build and test your mod</li>
+						<li>Document progress in your JOURNAL.md</li>
+					</ul>
+				</div>
+				<div class="image">
+					<img src="https://user-cdn.hackclub-assets.com/019c3613-ffe0-7480-8fd0-2c56167e4fa5/Screenshot%202026-02-06%20at%2010.09.56%E2%80%AFPM.png" alt="Build" />
+				</div>
 			</div>
 
 			<div class="step">
-				<div class="step-number">5</div>
-				<h3>Get Hack Club Filament</h3>
-				<p>Once your mod is complete and working, resubmit to receive exclusive Hack Club filament!</p>
-				<ul>
-					<li>Record a video of your mod in action</li>
-					<li>Submit final build to the build submission form</li>
-					<li>Receive Hack Club filament</li>
-				</ul>
+				<div class="step-content">
+					<div class="step-number">5</div>
+					<h3>Get Hack Club Filament</h3>
+					<p>Once your mod is complete and working, resubmit to receive exclusive Hack Club filament!</p>
+					<ul>
+						<li>Record a video of your mod in action</li>
+						<li>Submit final build to the build submission form</li>
+						<li>Receive Hack Club filament</li>
+					</ul>
+				</div>
+				<div class="image">
+					<img src="https://user-cdn.hackclub-assets.com/019c3613-7343-7bce-9598-43dc07c06330/Flashforge-1-75mm-PLA-Galaxy-3D-Printing-Filament-1KG-Galaxy-Red-522611-0._w500_.jpg" alt="Filament" />
+				</div>
 			</div>
 		</div>
 	</section>
@@ -75,6 +100,9 @@
 		<h2>Ready to Go?</h2>
 		<p>Check out the submission guidelines to learn how to document and submit your project!</p>
 		<a href="/submitting/submission-guidelines" class="cta-button">Submission Guidelines</a>
+		<div class="section-divider"></div>
+		<h2>Have More Questions?</h2>
+		<p>Join the #rework channel on Slack to ask questions and get help from the community!</p>
 	</section>
 </div>
 
@@ -135,6 +163,8 @@
 	}
 
 	.step {
+		display: flex;
+		gap: 30px;
 		padding: 40px;
 		background: var(--bg-secondary);
 		border: 1px solid var(--border-color);
@@ -145,6 +175,10 @@
 	.step:hover {
 		border-color: var(--accent-primary);
 		box-shadow: 0 5px 20px rgba(255, 107, 53, 0.1);
+	}
+
+	.step-content {
+		flex: 1;
 	}
 
 	.step-number {
@@ -188,38 +222,37 @@
 		color: var(--accent-primary);
 	}
 
-	.tips-section {
-		margin: 80px 0;
-	}
-
-	.tips-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 30px;
-	}
-
-	.tip-card {
-		padding: 30px;
-		background: var(--bg-secondary);
-		border: 1px solid var(--border-color);
+	.image {
+		width: 320px;
+		height: 320px;
+		flex-shrink: 0;
+		overflow: hidden;
+		border-radius: 16px;
+		order: 2;
+		background:var(--bg-secondary);
+		padding: 14px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 2px solid var(--border-color);
 		transition: all 0.3s;
 	}
 
-	.tip-card:hover {
+	.image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.3s;
+		border-radius: inherit;
+	}
+
+	.step:hover .image img {
+		transform: scale(1.05);
 		border-color: var(--accent-primary);
-		transform: translateY(-5px);
 	}
-
-	.tip-card h3 {
-		font-size: 1.3rem;
-		color: var(--text-primary);
-		margin-bottom: 15px;
-	}
-
-	.tip-card p {
-		font-size: 1rem;
-		color: var(--text-secondary);
-		line-height: 1.6;
+	
+	.step:nth-child(even) {
+		flex-direction: row-reverse;
 	}
 
 	.cta-section {
@@ -261,6 +294,12 @@
 		box-shadow: 0 0 30px rgba(255, 107, 53, 0.3);
 	}
 
+	.section-divider {
+		border-top: 2px solid var(--border-color);
+		margin: 60px 0;
+	}
+
+
 	@media (max-width: 768px) {
 		h1 {
 			font-size: 2.5rem;
@@ -270,8 +309,13 @@
 			font-size: 2rem;
 		}
 
-		.tips-grid {
-			grid-template-columns: 1fr;
+		.step {
+			flex-direction: column;
+		}
+
+		.image {
+			width: 100%;
+			order: 0;
 		}
 	}
 </style>

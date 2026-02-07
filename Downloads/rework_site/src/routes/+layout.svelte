@@ -55,7 +55,7 @@
 		</a>
 	</div>
 </nav>
-
+	
 {#if menuOpen}
 	<div class="overlay" on:click={() => menuOpen = false}></div>
 {/if}
@@ -97,10 +97,10 @@
 	.menu-toggle {
 		position: fixed;
 		top: 20px;
-		left: 20px;
+		right: 20px;
 		z-index: 1001;
 		background: var(--bg-secondary);
-		border: 2px solid var(--border-color);
+		border: 2px solid var(--accent-primary);
 		color: var(--accent-primary);
 		font-size: 1.5rem;
 		padding: 10px 15px;
@@ -116,7 +116,7 @@
 	.sidebar {
 		position: fixed;
 		top: 0;
-		left: -300px;
+		right: -300px;
 		width: 300px;
 		height: 100vh;
 		background: var(--bg-secondary);
@@ -129,7 +129,7 @@
 	}
 
 	.sidebar.open {
-		left: 0;
+		right: 0;
 	}
 
 	.sidebar-header {
@@ -174,7 +174,7 @@
 		padding: 15px 20px;
 		color: var(--text-secondary);
 		text-decoration: none;
-		border-left: 3px solid transparent;
+		border-right: 3px solid transparent;
 		transition: all 0.3s;
 		font-size: 1.1rem;
 	}
@@ -182,13 +182,13 @@
 	.nav-list li a:hover {
 		color: var(--text-primary);
 		background: rgba(255, 107, 53, 0.05);
-		border-left-color: var(--accent-primary);
+		border-right-color: var(--accent-primary);
 	}
 
 	.nav-list li a.active {
 		color: var(--accent-primary);
 		background: rgba(255, 107, 53, 0.1);
-		border-left-color: var(--accent-primary);
+		border-right-color: var(--accent-primary);
 	}
 
 	.sidebar-footer {

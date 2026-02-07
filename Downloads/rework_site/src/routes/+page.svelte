@@ -5,37 +5,45 @@
 		yes: [
 			{
 				title: 'Custom Toolhead',
-				desc: 'Design a custom toolhead for your printer for a new hotend, extruder, or fan combo'
+				desc: 'Design a custom toolhead for your printer for a new hotend, extruder, or fan combo',
+				image: 'https://cdn.hackclub.com/019c3430-8fea-797a-81c3-f19bf5697c49/image.png'
 			},
 			{
 				title: 'Linear Rail Upgrade',
-				desc: 'Replace V-Wheels with linear rails for extra rigidity and precision'
+				desc: 'Replace V-Wheels with linear rails for extra rigidity and precision',
+				image: 'https://cdn.hackclub.com/019c3431-823d-704e-9381-72d970f71092/screenshot_2026-02-06_at_1.22.54___pm.png'
 			},
 			{
 				title: 'Filament Sensor',
-				desc: 'Add a filament runout sensor to your printer to avoid failed prints'
+				desc: 'Add a filament runout sensor to your printer to avoid failed prints',
+				image: 'https://cdn.hackclub.com/019c3433-37b6-7fa2-9e6d-4194b472b820/image.png'
 			},
 			{
 				title: 'Multi Material Upgrade',
-				desc: 'Design a mod to add multi-material printing capabilities to your printer'
+				desc: 'Design a mod to add multi-material printing capabilities to your printer',
+				image: 'https://cdn.hackclub.com/019c3434-4cec-7605-b07a-70ec5c37df4a/image.png'
 			}
 		],
 		no: [
 			{
-				title: 'Just Installing Klipper',
-				desc: 'Software-only changes don\'t count (but Klipper + hardware does!)'
+				title: 'Installing Klipper',
+				desc: 'Software-only changes don\'t count (but Klipper + hardware does!)',
+				image: 'https://cdn.hackclub.com/019c3434-fc43-73d0-a97e-895a068dfb5f/image.png'
 			},
 			{
-				title: 'Tuning Settings',
-				desc: 'Changing temps, speeds, or flow in your slicer does not qualify as a mod'
+				title: 'Tuning Slicer Settings',
+				desc: 'Changing temps, speeds, or flow in your slicer does not qualify as a mod',
+				image: 'https://cdn.hackclub.com/019c3437-1e08-7d4b-9917-86b944d9aeb8/image.png'
 			},
 			{
 				title: 'Pre-made Kits',
-				desc: 'Your mods must be designed and built by you, not a pre-made upgrade kit'
+				desc: 'Your mods must be designed and built by you, not a pre-made upgrade kit',
+				image: 'https://cdn.hackclub.com/019c3439-9f80-7ab3-87a8-e38dc79bf646/image.png'
 			},
 			{
 				title: 'High Voltage Upgrades (120V+)',
-				desc: 'Please avoid high voltage modifications for safety reasons, please contact us if unsure!'
+				desc: 'Please avoid high voltage modifications for safety reasons, please contact us if unsure!',
+				image: 'https://cdn.hackclub.com/019c343a-75af-7671-a673-8b43a4c3f082/image.png'
 			}
 		]
 	};
@@ -66,7 +74,6 @@
 <svelte:head>
 	<title>Hack Club Rework - Mod Your 3D Printer</title>
 </svelte:head>
-
 <div class="container">
 	<header>
 		<div class="logo">REWORK</div>
@@ -118,8 +125,13 @@
 				<h3 class="examples-header yes">✓ YES — THESE COUNT</h3>
 				{#each examples.yes as example}
 					<div class="example-card yes">
-						<div class="example-title">{example.title}</div>
-						<div class="example-desc">{example.desc}</div>
+						<div class="example-image">
+							<img src={example.image} alt={example.title} />
+						</div>
+						<div class="example-content">
+							<div class="example-title">{example.title}</div>
+							<div class="example-desc">{example.desc}</div>
+						</div>
 					</div>
 				{/each}
 			</div>
@@ -128,8 +140,13 @@
 				<h3 class="examples-header no">✗ NO — THESE DON'T</h3>
 				{#each examples.no as example}
 					<div class="example-card no">
-						<div class="example-title">{example.title}</div>
-						<div class="example-desc">{example.desc}</div>
+						<div class="example-image">
+							<img src={example.image} alt={example.title} />
+						</div>
+						<div class="example-content">
+							<div class="example-title">{example.title}</div>
+							<div class="example-desc">{example.desc}</div>
+						</div>
 					</div>
 				{/each}
 			</div>
@@ -236,17 +253,6 @@
 		letter-spacing: 2px;
 	}
 
-	.ascii-art {
-		margin: 30px 0;
-		opacity: 0.5;
-	}
-
-	.ascii-art pre {
-		font-size: 1rem;
-		line-height: 1.2;
-		color: var(--accent-primary);
-	}
-
 	.hero-stats {
 		display: flex;
 		justify-content: center;
@@ -334,6 +340,8 @@
 	}
 
 	.example-card {
+		display: flex;
+		gap: 15px;
 		padding: 20px;
 		border: 1px solid var(--border-color);
 		background: var(--bg-secondary);
@@ -366,7 +374,28 @@
 		color: var(--text-muted);
 		line-height: 1.5;
 	}
+	.example-image {
+		width: 100px;
+		height: 100px;
+		flex-shrink: 0;
+		overflow: hidden;
+		border-radius: 4px;
+	}
 
+	.example-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.3s;
+	}
+
+	.example-content {
+		flex: 1;
+	}
+
+	.example-card:hover .example-image img {
+		transform: scale(1.05);
+	}
 	.faq-list {
 		display: flex;
 		flex-direction: column;
