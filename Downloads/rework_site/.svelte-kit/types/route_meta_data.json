@@ -1,0 +1,22 @@
+{
+	"/": [],
+	"/api/github": [
+		"src/routes/api/github/+server.js"
+	],
+	"/api/signup": [
+		"src/routes/api/signup/+server.js"
+	],
+	"/examples": [
+		"src/routes/examples/+page.js"
+	],
+	"/examples/[slug]": [
+		"src/routes/examples/[slug]/+page.js"
+	],
+	"/github-test/[slug]": [
+		"src/routes/github-test/[slug]/+page.server.js"
+	],
+	"/how-it-works": [],
+	"/sourcing": [],
+	"/submitting/journaling": [],
+	"/submitting/submission-guidelines": []
+}
