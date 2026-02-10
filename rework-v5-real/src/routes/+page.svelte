@@ -76,19 +76,27 @@
 </svelte:head>
 <div class="container">
 	<header>
-		<div class="logo">REWORK</div>
-		<div class="tagline">DESIGN A MOD FOR YOUR 3D PRINTER. GET A GRANT TO BUILD IT.</div>
+		<div class="hero-content">
+			<div class="logo">REWORK</div>
+			<div class="tagline">DESIGN A MOD FOR YOUR 3D PRINTER.</div>
+			<div class="tagline">GET A GRANT TO REWORK IT.</div>
 
-		<div class="hero-stats">
-			<div class="stat">
-				<div class="stat-number">$75</div>
-				<div class="stat-label">grant per mod</div>
-			</div>
-			<div class="stat">
-				<div class="stat-number">1kg</div>
-				<div class="stat-label">hack club filament</div>
+			<div class="hero-stats">
+				<div class="stat">
+					<div class="stat-number">$75</div>
+					<div class="stat-label">grant per mod</div>
+				</div>
+				<div class="stat">
+					<div class="stat-number">1kg</div>
+					<div class="stat-label">hack club filament</div>
+				</div>
 			</div>
 		</div>
+		<div class="example_media">
+			<img src="/examplemod.png" alt="Example mod" class="example_image" aria-hidden="true" />
+			<p class="example_image_caption">This used to be a Creality Ender 3! ⤴</p>
+		</div>
+
 	</header>
 	<div class="email-signup">
 	<p class="signup-text">Join the Hack Club Slack to get started!</p>
@@ -191,37 +199,6 @@
 </div>
 
 <style>
-	.gcode-bg {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 0.05;
-		z-index: 0;
-		font-size: 18px;
-		line-height: 1.4;
-		overflow: hidden;
-		pointer-events: none;
-		display: flex;
-		gap: 40px;
-	}	
-
-	.gcode-column {
-		flex: 1;
-		white-space: pre;
-		animation: scrollUp 50s linear infinite;
-	}
-
-	@keyframes scrollUp {
-		0% {
-			transform: translateY(0);
-		}
-		100% {
-			transform: translateY(-50%);
-		}
-	}
-
 	.container {
 		position: relative;
 		z-index: 1;
@@ -231,11 +208,17 @@
 	}
 
 	header {
-		text-align: center;
-		padding: 60px 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 40px;
+
+		text-align: left;
+		padding: 90px 20px;
 		border-bottom: 2px solid var(--border-color);
 		margin-bottom: 60px;
 	}
+
 
 	.logo {
 		font-size: 4rem;
@@ -249,20 +232,20 @@
 	.tagline {
 		font-size: 1.5rem;
 		color: var(--text-secondary);
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 		letter-spacing: 2px;
 	}
 
 	.hero-stats {
 		display: flex;
-		justify-content: center;
+		justify-content: left;
 		gap: 60px;
 		flex-wrap: wrap;
 		margin-top: 40px;
 	}
 
 	.stat {
-		text-align: center;
+		text-align: left;
 	}
 
 	.stat-number {
@@ -306,7 +289,44 @@
 		color: var(--text-secondary);
 		margin-bottom: 40px;
 	}
+	
+	.example_image {
+		margin-top: 60px;
+		position: static;
+		width: 90%;
+		max-width: 500px;
+		height: auto;
+		transform: none;
+		z-index: auto;
+		border: 6px solid var(--border-accent);
+		filter: brightness(1);
+		border-radius: 24px;
+		box-shadow: 0 0 40px var(--accent-glow);
+	}
 
+	.example_image:hover {
+		transform: scale(1.01);
+		box-shadow: 0 0 60px var(--accent-glow);
+		filter: brightness(1.1);
+		transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+	}
+
+	.example_media {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.example_image_caption {
+		margin-top: 10px;
+		transform: none;
+		position: static;
+		color: var(--accent-primary);
+	}
+
+	.hero_content {
+		display: flex;
+	}
 	.examples-grid {
   		display: grid;
   		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

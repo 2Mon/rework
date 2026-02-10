@@ -82,7 +82,7 @@
 	.gcode-column {
 		flex: 1;
 		white-space: pre;
-		animation: scrollUp 20s linear infinite;
+		animation: scrollUp 40s linear infinite;
 	}
 
 	@keyframes scrollUp {
