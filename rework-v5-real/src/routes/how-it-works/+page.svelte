@@ -72,6 +72,7 @@
 					<ul>
 						<li>Build and test your mod</li>
 						<li>Document progress in your JOURNAL.md</li>
+						<li>Write a build instruction manual for your project</li>
 					</ul>
 				</div>
 				<div class="image">
@@ -83,7 +84,7 @@
 				<div class="step-content">
 					<div class="step-number">5</div>
 					<h3>Get Hack Club Filament</h3>
-					<p>Once your mod is complete and working, resubmit to receive exclusive Hack Club filament!</p>
+					<p>Submit your build to receive exclusive Hack Club filament!</p>
 					<ul>
 						<li>Record a video of your mod in action</li>
 						<li>Submit final build to the build submission form</li>

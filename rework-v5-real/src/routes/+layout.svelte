@@ -69,7 +69,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		opacity: 0.0;
+		opacity: 0.03;
 		z-index: 0;
 		font-size: 18px;
 		line-height: 1.4;
