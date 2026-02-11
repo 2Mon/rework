@@ -34,5 +34,14 @@ export const faqs = [
 			'You can post your progress in #rework!',
 			'We love seeing unique and exciting mods made by the community, and would love to help you with any issues you are facing.'
 		]
+	},
+	{
+		gcode: 'G4',
+		command: 'SET DWELL TIME',
+		question: 'When does Rework end?',
+		answer: [
+			'Rework design submissions end on March 6th, 2026!',
+			'Build submissions will be open until March 20th, 2026.',
+		]
 	}
 ];

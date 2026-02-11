@@ -122,6 +122,9 @@
 			Got an old Ender 3? Make it print faster. Got a Bambu? Hack it and add custom features. 
 			Have a unique idea? Make it happen. <strong>Rework is made for all hardware based 3d printer mods</strong>
 		</p>
+		<p>
+			Design submissions for Rework end on March 6th, 2026. <strong>Get started early and post your progress in the Hack Club Slack!</strong>
+		</p>
 	</section>
 
 	<section class="examples-section">
