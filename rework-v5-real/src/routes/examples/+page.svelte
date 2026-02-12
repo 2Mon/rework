@@ -1,6 +1,5 @@
-<script>
-	export let data;
-	$: mods = data.mods;
+<script lang="ts">
+	import mods from '$lib/mods.json';
 </script>
 
 <svelte:head>
@@ -16,7 +15,7 @@
 
 	<div class="mods-grid">
 		{#each mods as mod}
-			<a href="/examples/{mod.id}" class="mod-card">
+			<a href={mod.link} class="mod-card">
 				<div class="mod-image">
 					{#if mod.image}
 						<img src={mod.image} alt={mod.title} />
@@ -26,15 +25,12 @@
 						</div>
 					{/if}
 				</div>
-				
+
 				<div class="mod-content">
 					<h2 class="mod-title">{mod.title}</h2>
 					<div class="mod-meta">
-  						<span class="author">by {mod.author}</span>
-  						{#if mod.link}
-    						<a href={mod.link} target="_blank" rel="noopener noreferrer" class="mod-link">View Project →</a>
-  						{/if}
-				</div>
+						<span class="author">by {mod.author}</span>
+					</div>
 					<p class="mod-description">{mod.description}</p>
 					<div class="mod-stats">
 						<span class="stat">💰 {mod.cost}</span>
@@ -186,15 +182,15 @@
 	}
 
 	.mod-link {
-  		color: var(--accent-primary);
-  		text-decoration: none;
-  		border-bottom: 1px solid var(--accent-primary);
-  		transition: all 0.2s;
+		color: var(--accent-primary);
+		text-decoration: none;
+		border-bottom: 1px solid var(--accent-primary);
+		transition: all 0.2s;
 	}
 
 	.mod-link:hover {
-  		color: var(--accent-secondary);
-  		border-bottom-color: var(--accent-secondary);
+		color: var(--accent-secondary);
+		border-bottom-color: var(--accent-secondary);
 	}
 
 	.submit-section {

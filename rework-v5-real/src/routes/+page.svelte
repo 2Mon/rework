@@ -1,6 +1,6 @@
 <script>
 	import { faqs } from '$lib/faq-data.js';
-	
+
 	const examples = {
 		yes: [
 			{
@@ -11,7 +11,8 @@
 			{
 				title: 'Linear Rail Upgrade',
 				desc: 'Replace V-Wheels with linear rails for extra rigidity and precision',
-				image: 'https://cdn.hackclub.com/019c3431-823d-704e-9381-72d970f71092/screenshot_2026-02-06_at_1.22.54___pm.png'
+				image:
+					'https://cdn.hackclub.com/019c3431-823d-704e-9381-72d970f71092/screenshot_2026-02-06_at_1.22.54___pm.png'
 			},
 			{
 				title: 'Filament Sensor',
@@ -27,7 +28,7 @@
 		no: [
 			{
 				title: 'Installing Klipper',
-				desc: 'Software-only changes don\'t count (but Klipper + hardware does!)',
+				desc: "Software-only changes don't count (but Klipper + hardware does!)",
 				image: 'https://cdn.hackclub.com/019c3434-fc43-73d0-a97e-895a068dfb5f/image.png'
 			},
 			{
@@ -58,7 +59,7 @@
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify({ email, timestamp: new Date().toISOString() })
 			});
-			
+
 			if (response.ok) {
 				submitMessage = '✓ Email Submitted! Check back soon for instructions!';
 				email = '';
@@ -68,7 +69,7 @@
 		} catch (error) {
 			submitMessage = '✗ Error submitting. Try again!';
 		}
-}
+	}
 </script>
 
 <svelte:head>
@@ -96,41 +97,42 @@
 			<img src="/examplemod.png" alt="Example mod" class="example_image" aria-hidden="true" />
 			<p class="example_image_caption">This used to be a Creality Ender 3! ⤴</p>
 		</div>
-
 	</header>
 	<div class="email-signup">
-	<p class="signup-text">Join the Hack Club Slack to get started!</p>
-	<form on:submit|preventDefault={handleEmailSubmit}>
-		<input 
-			type="email" 
-			placeholder="Enter your email" 
-			bind:value={email}
-			required
-		/>
-		<button type="submit">Join Rework</button>
-	</form>
-	{#if submitMessage}
-		<p class="submit-message">{submitMessage}</p>
-	{/if}
-</div>
+		<p class="signup-text">Join the Hack Club Slack to get started!</p>
+		<form on:submit|preventDefault={handleEmailSubmit}>
+			<input type="email" placeholder="Enter your email" bind:value={email} required />
+			<button type="submit">Join Rework</button>
+		</form>
+		{#if submitMessage}
+			<p class="submit-message">{submitMessage}</p>
+		{/if}
+	</div>
 	<section class="intro">
 		<h2>WHAT IS THIS?</h2>
 		<p>
-			Hack Club Rework gives you <strong>$75 + exclusive free filament</strong> to physically modify your 3D printer. 
+			Hack Club Rework gives you <strong>$75 + exclusive free filament</strong> to physically modify your
+			3D printer.
 		</p>
 		<p>
-			Got an old Ender 3? Make it print faster. Got a Bambu? Hack it and add custom features. 
-			Have a unique idea? Make it happen. <strong>Rework is made for all hardware based 3d printer mods</strong>
+			Got an old Ender 3? Make it print faster. Got a Bambu? Hack it and add custom features. Have a
+			unique idea? Make it happen. <strong
+				>Rework is made for all hardware based 3d printer mods</strong
+			>
 		</p>
 		<p>
-			Design submissions for Rework end on March 6th, 2026. <strong>Get started early and post your progress in the Hack Club Slack!</strong>
+			Design submissions for Rework end on March 6th, 2026. <strong
+				>Get started early and post your progress in the Hack Club Slack!</strong
+			>
 		</p>
 	</section>
 
 	<section class="examples-section">
 		<h2>WHAT COUNTS AS A MOD?</h2>
-		<p class="section-intro">Your project needs to involve <strong>actual hardware modifications</strong> designed by you.</p>
-		
+		<p class="section-intro">
+			Your project needs to involve <strong>actual hardware modifications</strong> designed by you.
+		</p>
+
 		<div class="examples-grid">
 			<div class="examples-column">
 				<h3 class="examples-header yes">✓ YES — THESE COUNT</h3>
@@ -189,7 +191,10 @@
 		<a href="/how-it-works" class="cta-button">HOW TO REWORK</a>
 		<p class="cta-subtext">Got an old printer? Time to rework it.</p>
 		<div style="margin-top: 30px;">
-			<a href="/examples" style="color: var(--text-secondary); border-bottom: 1px solid var(--border-color); padding-bottom: 2px;">
+			<a
+				href="/examples"
+				style="color: var(--text-secondary); border-bottom: 1px solid var(--border-color); padding-bottom: 2px;"
+			>
 				Check out featured mods from the community →
 			</a>
 		</div>
@@ -221,7 +226,6 @@
 		border-bottom: 2px solid var(--border-color);
 		margin-bottom: 60px;
 	}
-
 
 	.logo {
 		font-size: 4rem;
@@ -292,12 +296,12 @@
 		color: var(--text-secondary);
 		margin-bottom: 40px;
 	}
-	
+
 	.example_image {
 		margin-top: 60px;
 		position: static;
-		width: 90%;
-		max-width: 500px;
+		width: 100%;
+		max-width: 600px;
 		height: auto;
 		transform: none;
 		z-index: auto;
@@ -311,7 +315,10 @@
 		transform: scale(1.01);
 		box-shadow: 0 0 60px var(--accent-glow);
 		filter: brightness(1.1);
-		transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+		transition:
+			transform 0.3s ease-in,
+			box-shadow 0.3s ease-in-out,
+			filter 0.3s ease-in-out;
 	}
 
 	.example_media {
@@ -331,9 +338,9 @@
 		display: flex;
 	}
 	.examples-grid {
-  		display: grid;
-  		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  		gap: 40px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 40px;
 	}
 
 	.examples-column {
@@ -520,8 +527,8 @@
 	}
 
 	.email-signup {
-	margin-top: 40px;
-	text-align: center;
+		margin-top: 40px;
+		text-align: center;
 	}
 
 	.signup-text {

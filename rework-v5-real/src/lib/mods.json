@@ -1,0 +1,12 @@
+[
+	{
+		"id": "author-projectname",
+		"title": "test",
+		"author": "test",
+		"printer": "one of em",
+		"description": "test",
+		"cost": "$67",
+		"image": "examplemod.png",
+		"link": "https://github.com/2mon/rework"
+	}
+]
