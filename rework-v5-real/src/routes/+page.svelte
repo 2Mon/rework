@@ -42,7 +42,7 @@
 				image: 'https://cdn.hackclub.com/019c3439-9f80-7ab3-87a8-e38dc79bf646/image.png'
 			},
 			{
-				title: 'High Voltage Upgrades (120V+)',
+				title: 'High Voltage Upgrades (60V+)',
 				desc: 'Please avoid high voltage modifications for safety reasons, please contact us if unsure!',
 				image: 'https://cdn.hackclub.com/019c343a-75af-7671-a673-8b43a4c3f082/image.png'
 			}
