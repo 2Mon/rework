@@ -75,6 +75,7 @@
 <svelte:head>
 	<title>Hack Club Rework - Mod Your 3D Printer</title>
 </svelte:head>
+
 <div class="container">
 	<header>
 		<div class="hero-content">
@@ -309,6 +310,10 @@
 		filter: brightness(1);
 		border-radius: 24px;
 		box-shadow: 0 0 40px var(--accent-glow);
+		transition:
+			transform 0.1s ease-in,
+			box-shadow 0.1s ease-in-out,
+			filter 0.1s ease-in-out;
 	}
 
 	.example_image:hover {
