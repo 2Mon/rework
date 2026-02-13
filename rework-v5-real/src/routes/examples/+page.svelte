@@ -10,7 +10,7 @@
 	<a href="/" class="back-link">← Back to Home</a>
 	<header>
 		<h1>EXAMPLE MODS</h1>
-		<p class="subtitle">Rework projects from the community.</p>
+		<p class="subtitle">Awesome projects to be inspired by!</p>
 	</header>
 
 	<div class="mods-grid">

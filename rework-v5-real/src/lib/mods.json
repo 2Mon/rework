@@ -6,7 +6,7 @@
     "printer": "any",
     "description": "330w supervolcano heater hotend with three pt1000 thermistors and SLM steel and aluminum parts.",
     "cost": "$140",
-    "image": "examplemod.png",
+    "image": "superdupervolcano.png",
     "link": "https://github.com/2Mon/super-duper-volcano"
   },
   {
@@ -16,7 +16,17 @@
     "printer": "Voron 2.4/Trident",
     "description": "Cpap toolhead inspired by @DK on discord using the fibersteam x carriage or my custom sheetmetal sandwich x carriage, goliath hotend, beacon rev H and bmg extruder with a smooth bearing idler. Smooth idler and front bmg bearings are MR115.",
     "cost": "$200",
-    "image": "examplemod.png",
+    "image": "uaptoolhead.png",
     "link": "https://www.printables.com/model/1287910-uap-toolhead"
+  },
+  {
+	"id":"pico-mmu",
+	"title":"Pico MMU",
+	"author":"lhndo",
+	"printer":"any",
+	"description":"A multi-material upgrade for any printer running klipper",
+	"cost":"$80",
+	"image":"picommu.png",
+	"link":"https://github.com/lhndo/LH-Stinger/wiki/Pico-MMU"
   }
 ]
